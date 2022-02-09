@@ -1,7 +1,5 @@
 package forFINAL.Nested_Class.StaticNestedClass;
 
-import jdk.internal.dynalink.beans.StaticClass;
-
 class Outer
 {
     static String outer = "String inside outer";

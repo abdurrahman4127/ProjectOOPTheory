@@ -1,23 +1,20 @@
 package forMID.Lecture9_ClassObject_Final;
 
-class Parents
-{
+class Parents {
     String name;
-    void printName()
-    {
+    void printName() {
         System.out.println(name);
     }
 
     //parents class constructor with one parameter
-    Parents(String name)
-    {
+    Parents(String name) {
         this.name = name;
     }
 }
 
 class Child extends Parents
 {
-   // super(parameter); will call the constructor of the parents class
+//    super();  // will call the constructor of the parents class
     String name;
     public Child(String p, String c)
     {
@@ -34,82 +31,74 @@ class Child extends Parents
 }
 
 //super(parameter); and super(parameterless);
-class One
-{
-    One()
-    {
-        System.out.println("Inside beforeMID.One");
+class One {
+    One() {
+        System.out.println("Inside  One");
     }
 
-    One (String msg)
-    {
-        System.out.println("beforeMID.One : " + msg);
+    One (String msg) {
+        System.out.println(" One : " + msg);
     }
 }
 
-class Two extends One
-{
+class Two extends One {
     Two()
     {
-        System.out.println("Inside beforeMID.Two");
+        System.out.println("Inside  Two");
     }
 
-    Two (String msg)
-    {
-        System.out.println("beforeMID.Two : " + msg);
-    }
-}
-
-class Three extends Two
-{
-    Three()
-    {
-        System.out.println("Inside beforeMID.Three");
-    }
-
-    Three (String msg)
-    {
-        System.out.println("beforeMID.Three : " + msg);
+    Two (String msg) {
+        System.out.println("Two : " + msg);
     }
 }
 
-class objectClassConcept
-{
-    //all of the classes are inherited from Object class (by default)
-    //inside that class, there are many methods (built-in), such as toString(), hashCode(), isEqual()
-    // toString() is used to print the address of the Class, but we can override it.
+class Three extends Two {
+    Three() {
+        System.out.println("Inside  Three");
+    }
 
+    Three (String msg) {
+        System.out.println("Three : " + msg);
+    }
+}
+
+class objectClassConcept {
+/*
+    all the classes are inherited from Object class (by default)
+    inside that class, there are many methods (built-in), such as toString(), hashCode(), isEqual()
+     toString() is used to print the address of the Class, but we can override it.
+*/
     String name;
-    public String toString()
-    {
+    public String toString() {
         return name;
     }
 }
 
-public class theoryClassNine
-{
+public class theoryClassNine {
     public static void main(String[] args)
     {
-//        beforeMID.Parents p = new beforeMID.Parents();
-//        p.printName();
-//
-//        beforeMID.Child c = new beforeMID.Child("Nazmul","Abdur Rahman");
-//        c.printName();
+        Parents p = new Parents("Nazmul");
+        p.printName();
 
-//        beforeMID.Three three1 = new beforeMID.Three();
-//        System.out.println(); //inside one, two, three
-//        beforeMID.Three three2 = new beforeMID.Three("University"); //inside one, inside two, inside three university
+        Child c = new  Child("Nazmul","Abdur Rahman");
+        c.printName();
 
-        //java calls super(parameterless); function by default.
-        //it doesn't create parameter including super(); function by itself
-        //therefore, it won't pass super(msg) to anyone, other than from the
-        //class it was written from (beforeMID.Three)
+        Three three1 = new  Three();
+        System.out.println(); //inside one, two, three
+        Three three2 = new Three("University"); //inside one, inside two, inside three university
+
+ /*
+        java calls super(parameterless); function by default.
+        it doesn't create parameter including super(); function by itself
+        therefore, it won't pass super(msg) to anyone, other than from the
+        class it was written from ( Three)
+ */
 
         objectClassConcept obj = new objectClassConcept();
         obj.name = "objectName";
         System.out.println(obj); //this will print "objectName"
 
         //if toString() wasn't overridden, it would print the address of the class
-        //to try, remove toString methode; it will print : beforeMID.objectClassConcept@1540e19d
+        //to try, remove toString methode; it will print :  objectClassConcept@1540e19d
     }
 }
