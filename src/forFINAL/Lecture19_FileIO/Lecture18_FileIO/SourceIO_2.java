@@ -2,8 +2,7 @@ package forFINAL.Lecture19_FileIO.Lecture18_FileIO;
 
 import java.util.Scanner;
 
-public class SourceIO_2
-{
+public class SourceIO_2 {
     public static void main(String[] args)
     {
         Scanner scanner = new Scanner("this is the source");

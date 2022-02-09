@@ -1,43 +1,51 @@
 package forMID.Lecture10_MethodOverloading;
 
-//methode signature depends on
-//1.methode name 2.parameter number 3.parameter types 4.parameter order (return type doesn't matter)
+/*        methode signature depends on
+   1.methode name
+   2.parameter number
+   3.parameter types
+   4.parameter order (return type doesn't matter)
+          return type doesn't matter
+*/
+
+/*        methode overloading :
+       same class, same name; but different signature
+       parameter type different
+ */
+
 class MethodeSignature
 {
-    void methode(String a)
-    {
-        System.out.println("//");
-    }
-//    void show(String a) //can't have same signature methode under same class;
-//    {
-//        System.out.println("//");
-//    } //return type doesn't matter
-
-    //methode overloading :
-    //same class, same name; but different signature
-    void methode(int a) //parameter type different
-    {
+    void methode(String a) {
         System.out.println("//");
     }
 
-    void print(int a)
-    {
+/*
+    // can't have same signature methode under same class;
+    void show(String a) {
+        System.out.println("//");
+    }
+*/
+
+
+    void methode(int a) {
+        System.out.println("//");
+    }
+
+    void print(int a) {
         System.out.println("int : " + a);
     }
 
-    void print(double a)
-    {
+    void print(double a) {
         System.out.println("double : " + a);
     }
 
-    void print(float a) //float won't be called if double has the same signature
-    {
+    //float won't be called if double has the same signature
+    void print(float a) {
         System.out.println("double : " + a);
     }
 }
 
-public class theoryClassTen
-{
+public class theoryClassTen {
     public static void main(String[] args)
     {
         MethodeSignature a = new MethodeSignature();

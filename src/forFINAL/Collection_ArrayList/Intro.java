@@ -3,11 +3,10 @@ package forFINAL.Collection_ArrayList;
 //import java.util.ArrayList;
 import java.util.*;
 
-public class Intro
-{
+public class Intro {
     public static void main(String[] args)
     {
-        ArrayList<String> list = new ArrayList<>(); //size is not required
+        ArrayList<String> list = new ArrayList<>();
 
         //adding items to ArrayList
         list.add("String 0");
@@ -29,16 +28,14 @@ public class Intro
 
         System.out.println("size is : "+ list.size());
 
-        for (int i=0; i<list.size(); i++)
-        {
+        for (int i=0; i<list.size(); i++) {
             System.out.println(list.get(i));
         }
 
         list.clear(); //clears everything
         System.out.println(list.size());
 
-        for (int i=0; i<list.size(); i++)   //
-        {
+        for (int i=0; i<list.size(); i++) {
             System.out.println(list.get(i));  //prints nothing as everything has been cleared
         }
 

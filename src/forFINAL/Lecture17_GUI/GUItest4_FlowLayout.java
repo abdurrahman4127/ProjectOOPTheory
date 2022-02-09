@@ -8,11 +8,9 @@ JFrame doesn't use Flowlayout by default, so to add multiple components,
 use either inner level container or FlowLayout
  */
 
-public class GUItest4_FlowLayout
-{
+public class GUItest4_FlowLayout {
     JFrame f;
-    GUItest4_FlowLayout()  //constructor of the public class
-    {
+    GUItest4_FlowLayout() {  //constructor of the public class
         f = new JFrame();
         f.setSize(300,300);
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

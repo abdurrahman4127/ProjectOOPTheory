@@ -8,16 +8,14 @@ if the validate(); methode receives a parameter that is less than 18.
 
  */
 
-class InvalidAgeException extends Exception
-{
+class InvalidAgeException extends Exception {
     InvalidAgeException(String a)
     {
        super(a);
     }
 }
 
-public class NestedException_Test7
-{
+public class NestedException_Test7 {
     public static void validate(int age)
     {
         try
@@ -34,8 +32,7 @@ public class NestedException_Test7
         }
     }
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         validate(13);
     }
 }

@@ -5,8 +5,7 @@ import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 
-public class BufferedReader_IO
-{
+public class BufferedReader_IO {
     public static void main(String[] args) throws Exception // exception
     {
         FileReader reader = new FileReader("C:\\Users\\MC\\projectOOP\\src\\forFINAL\\Lecture19_FileIO\\Lecture19_FileIO\\BufferedRead.txt");
@@ -23,8 +22,7 @@ public class BufferedReader_IO
         String s = bufferedReader.readLine();  //reads whole line
         bufferedWriter.newLine();  // prints a new line
 
-        while (s != null)
-        {
+        while (s != null) {
            bufferedWriter.write(s);
            bufferedWriter.newLine();
            s = bufferedReader.readLine();

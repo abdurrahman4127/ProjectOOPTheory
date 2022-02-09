@@ -5,8 +5,7 @@ package forFINAL.Lecture16_Exception;
 //Uncle 2 -> Error
 //son of uncle 1 -> Runtime Exception
 
-public class NestedException_Test
-{
+public class NestedException_Test {
     public static void main(String[] args)
     {
         int []course = new int[10];
@@ -20,21 +19,18 @@ public class NestedException_Test
                 System.out.println("End change");
             }
 
-            catch (NumberFormatException n)
-            {
+            catch (NumberFormatException n) {
                 System.out.println("Inner catch :" + n.getMessage());
                 n.printStackTrace();  // to keep a trace
             }
 
-            catch (ArrayIndexOutOfBoundsException inner)
-            {
+            catch (ArrayIndexOutOfBoundsException inner) {
                 System.out.println("Inner catch :" + inner.getMessage());
                 inner.printStackTrace();
             }
         }
 
-        catch (ArrayIndexOutOfBoundsException outer)
-        {
+        catch (ArrayIndexOutOfBoundsException outer) {
             System.out.println("Outer catch :" + outer.getMessage());
             outer.printStackTrace();
         }

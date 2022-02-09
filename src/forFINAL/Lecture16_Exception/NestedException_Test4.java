@@ -1,7 +1,6 @@
 package forFINAL.Lecture16_Exception;
 
-public class NestedException_Test4
-{
+public class NestedException_Test4 {
     public static void main(String[] args)
     {
         try {

@@ -2,12 +2,10 @@ package forFINAL.Lecture17_GUI;
 
 import javax.swing.*;
 
-public class GUItest6_NoLayout
-{
+public class GUItest6_NoLayout {
     JFrame frame;
 
-    GUItest6_NoLayout()
-    {
+    GUItest6_NoLayout() {
         frame = new JFrame();
         frame.setSize(200, 200);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

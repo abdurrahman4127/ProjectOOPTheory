@@ -1,30 +1,25 @@
 package forMID.Lecture11_Polymorphism;
 
 //static methode can't be overridden
-class BOX
-{
+class BOX {
     double width;
     double height;
     double depth;
 
-
     //constructor when al dimensions are mentioned
-    BOX(double w, double h, double d)
-    {
+    BOX(double w, double h, double d) {
         width = w;
         height = h;
         depth = d;
     }
 
     //constructor when cube is created
-    BOX(double len)
-    {
+    BOX(double len) {
         this(len,len,len); //calling constructor from the same class (just like 'super')
         //width = height = depth = len; // is also correct
     }
 
-    double getVolume()
-    {
+    double getVolume() {
         return (width*height*depth);
     }
 }
@@ -58,8 +53,7 @@ class BOX
 //}
 
  //output finding
-class AnimaLs
-{
+class AnimaLs {
     AnimaLs()
     {
         System.out.println("An animal is created");
@@ -75,8 +69,7 @@ class AnimaLs
     }
 }
 
-class Birds extends AnimaLs
-{
+class Birds extends AnimaLs {
     Birds()
     {
         System.out.println("A bird is created");
@@ -88,8 +81,7 @@ class Birds extends AnimaLs
     }
 }
 
-class Magpie extends Birds
-{
+class Magpie extends Birds {
     Magpie()
     {
         System.out.println("A magpie is created");
@@ -108,12 +100,10 @@ class Magpie extends Birds
     {
         System.out.println("beforeMID.Magpie is eating");
     }
-
 }
 
 
-public class theoryClassEleven_Polymorphism
-{
+public class theoryClassEleven_Polymorphism {
     public static void main(String[] args)
     {
 //        beforeMID.BOX b = new beforeMID.BOX(10,5,8);

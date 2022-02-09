@@ -3,21 +3,18 @@ package forFINAL.Lecture13_Static_Abstract;
 //static -> class specific; not object
 //changes for all (inside the class)
 
-class Student
-{
+class Student {
     String name;
     int rollNo;
     static String varsityName = "UIU";
 
-    public Student(String name, int rollNo)
-    {
+    public Student(String name, int rollNo) {
         this.name = name;
         this.rollNo = rollNo;
     }
 }
 
-public class Static
-{
+public class Static {
     public static void main(String[] args)
     {
         Student student1 = new Student("AR",1);

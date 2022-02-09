@@ -3,8 +3,7 @@ package forFINAL.Lecture19_FileIO.Lecture19_FileIO;
 import java.io.BufferedReader;
 import java.io.FileReader;
 
-public class BufferIO_Grade
-{
+public class BufferIO_Grade {
     public static void main(String[] args) throws Exception
     {
         FileReader reader = new FileReader("C:\\Users\\MC\\projectOOP\\src\\forFINAL\\Lecture19_FileIO\\Lecture19_FileIO\\BufferIO_Grade.txt");
@@ -12,8 +11,7 @@ public class BufferIO_Grade
 
         String s = bufferedReader.readLine();
 
-        while (s != null)
-        {
+        while (s != null) {
             String []words = s.split(" "); //gets split when gets space " " ; this can be changed
 //            System.out.println(words[0] + " " + words[1] + " " + words[2]); //to print all
 
@@ -23,10 +21,6 @@ public class BufferIO_Grade
             }
             s = bufferedReader.readLine();  //updates the value of string so that it can iterate until null
         }
-
-
-
-
 
     }
 }

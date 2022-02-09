@@ -8,8 +8,7 @@ import java.util.Scanner;
 //Uncle 2 -> Error
 //Son of uncle 1 -> Runtime Exception
 
-public class Exceptions
-{
+public class Exceptions {
     public static void main(String[] args)
     {
 //        String num = "7";
@@ -25,11 +24,11 @@ public class Exceptions
 //
 //        num = num + " hello world " + 7;
 //        System.out.println(num);  // 77 hello world 7
+
         Scanner scanner = new Scanner(System.in);
 
         //paste you code to try block from when you think any sort of exception can arise
-        try
-        {
+        try {
             int integer = scanner.nextInt();   // new InputMismatchException (); creates object then assigns to exception reference (sun-class polymorphism)
             String string = scanner.next();  // while scanning string, there's no exception since anything can be of string
 
@@ -41,27 +40,25 @@ public class Exceptions
         }
 
         //to catch exception, catch (typeOfException variableName) {}
-        catch (InputMismatchException ime)
-        {
+        catch (InputMismatchException ime) {
             System.out.println("enter an integer, you idiot!!");
             ime.printStackTrace(); //to trace where the exception arose from
         }
 
-        catch (NumberFormatException nfe)
-        {
+        catch (NumberFormatException nfe) {
             System.out.println("enter a number, you idiot!!");
         }
 
-        catch (ArithmeticException ae)
-        {
+        catch (ArithmeticException ae) {
             System.out.println("You cannot divide by 0");
             System.out.println(ae.getMessage()); // prints : / by zero ; it's java build-in message
         }
 
-        //if don't know which exception you are expecting, use 'Exception'; it's general exception
-        //don't write 'Exception' typed exception at first; otherwise only this block will be executed
-       //Exception is the super class of all type of exception
-
+        /*
+          if you don't know which exception you are expecting, use 'Exception'; it's general exception
+          don't write 'Exception' typed exception at first; otherwise only this block will be executed
+          Exception is the super class of all type of exception
+         */
         catch (Exception b) //public class can't be named after 'Exception'
         {
             System.out.println("something's wrong. I can feel it");

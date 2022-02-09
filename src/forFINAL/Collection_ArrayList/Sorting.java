@@ -19,12 +19,10 @@ class Students
     }
 }
 
-public class Sorting
-{
+public class Sorting {
     public static void main(String[] args)
     {
-        try
-        {
+        try {
             ArrayList<Students> list = new ArrayList<>();
 
             list.add(new Students("A", 7,3.77));   // creating object (without reference)
@@ -36,11 +34,10 @@ public class Sorting
             printStudentData(list);
 
             System.out.println("---After  sorting ---");
-            Collections.sort(list, new Comparator<Students>()  //anonymous
-            {
+
+            Collections.sort(list, new Comparator<Students>() { //anonymous
                 @Override
-                public int compare(Students left, Students right)
-                {
+                public int compare(Students left, Students right) {
                     if(right.cgpa > left.cgpa)
                         return -1;   // -1 : goes to the left
                     if(left.cgpa > right.cgpa)
@@ -53,15 +50,12 @@ public class Sorting
             printStudentData(list);  //method is to be a static as it's inside main method
         }
 
-        catch(Exception e)
-        {
+        catch(Exception e) {
             e.printStackTrace();
         }
-
     }
 
-    static void printStudentData(ArrayList<Students> list)
-    {
+    static void printStudentData(ArrayList<Students> list) {
         //for-each is smarter
         for (Students s : list) {
             System.out.println(s.name + " " + s.iD + " " + s.cgpa);

@@ -1,31 +1,26 @@
 package forMID;
 
-class X
-{
-    void methode(int a)
-    {
-        System.out.println("beforeMID.One");
+class X {
+    void methode(int a) {
+        System.out.println("One");
     }
 
-    void methode(double d)
-    {
-        System.out.println("beforeMID.Two");
+    void methode(double d) {
+        System.out.println("Two");
     }
 }
 
-class Y extends X
-{
+class Y extends X {
     @Override
-    void methode(double d)
-    {
-        System.out.println("beforeMID.Three");
+    void methode(double d) {
+        System.out.println("Three");
     }
 }
 
-public class theoryClassTwelve
-{
+public class theoryClassTwelve {
     public static void main(String[] args)
     {
-        new Y().methode(100); //passing integer, so integer methode wil be summoned
+        //passing integer, so integer methode wil be summoned
+        new Y().methode(100);
     }
 }

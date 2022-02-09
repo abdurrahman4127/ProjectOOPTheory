@@ -1,27 +1,23 @@
 package forFINAL.Lecture13_Static_Abstract;
 
-class Students
-{
+class Students {
     String name;
     int rollNo;
     static String varsityName = "UIU";
 
-    public Students(String name, int rollNo)
-    {
+    public Students(String name, int rollNo) {
         this.name = name;
         this.rollNo = rollNo;
     }
 
-    static void staticMethode()
-    {
+    static void staticMethode() {
 //        System.out.println(this.name + " in staticMethode();"); //this means calling object;
         System.out.println(varsityName);
 //        System.out.println(name); // not allowed as non-static attributes cannot be referenced from static methods
     }
 }
 
-public class CallingStaticMethodeClass
-{
+public class CallingStaticMethodeClass {
     public static void main(String[] args)
     {
         Students tn = new Students("Thao Nhi",7);

@@ -5,9 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
-public class FileWriter_IO
-{
-
+public class FileWriter_IO {
     public static void main(String[] args)
     {
         File file = new File("C:\\Users\\MC\\projectOOP\\src\\forFINAL\\Lecture19_FileIO\\Lecture19_FileIO\\file_write.txt");
@@ -15,14 +13,13 @@ public class FileWriter_IO
         //creating and writing a file (named : nonExisting.txt) that doesn't exist
         File nonExisting = new File("C:\\Users\\MC\\projectOOP\\src\\forFINAL\\Lecture19_FileIO\\Lecture19_FileIO\\nonExisting.txt");
 
-        try
-        {
-            java.io.PrintWriter writer = new java.io.PrintWriter(file);  //PrintWriter class
+        try {
+            PrintWriter writer = new PrintWriter(file);  //PrintWriter class
 
             writer.println("Abdur Rahman");
             writer.println(7);
 
-            writer = new java.io.PrintWriter(nonExisting);
+            writer = new PrintWriter(nonExisting);
             writer.println("Just created !!");
 
 //            Scanner scanner = new Scanner(System.in);  //scanning inputs from console

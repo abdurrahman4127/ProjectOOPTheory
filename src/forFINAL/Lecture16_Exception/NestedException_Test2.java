@@ -13,8 +13,7 @@ public class NestedException_Test2 {
         }
     }
 
-    public static void test()
-    {
+    public static void test() {
         try {
             int a = 4 / 0;  // system generated exception
         }
@@ -27,8 +26,7 @@ public class NestedException_Test2 {
             throw new IllegalArgumentException("Throwing another exception");
         }
 
-        finally
-        {
+        finally {
             System.out.println("Finally from test method");
         }
 

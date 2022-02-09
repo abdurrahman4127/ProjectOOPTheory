@@ -4,7 +4,6 @@ import java.io.*;
 import java.util.Scanner;
 
 public class FilePath_2 {
-
     public static void main(String[] args)
     {
         File file = new File("C:\\Users\\MC\\projectOOP\\src\\forFINAL\\Lecture19_FileIO\\Lecture18_FileIO\\file_2.txt");
@@ -27,14 +26,12 @@ public class FilePath_2 {
             System.out.println(sum);  //out of while-loop; otherwise it'll keep adding & printing each time it gets an integer
         }
 
-        catch (FileNotFoundException e)
-        {
+        catch (FileNotFoundException e) {
             System.out.println("file not found !!");
             e.printStackTrace();
         }
 
-        catch (Exception e)
-        {
+        catch (Exception e) {
             e.printStackTrace();
         }
     }

@@ -12,27 +12,24 @@ public class ExceptionTest {
     }
 
     public static void testSqrt(int s ) {
-        try
-        {
-            System.out.println(callSqr(s)); //2. goto : line no. 32
+        try {
+            System.out.println(callSqr(s));
         }
-        catch (Exception e)
-        {
+        catch (Exception e) {
             System.out.println(e.getMessage());
             e.printStackTrace();
         }
     }
 
     public static int sqr(int a) throws Exception {
-        if (a < 0)
-        {
-            throw new Exception("Can't be less than 0");  //4. go to the called function (line 32)
+        if (a < 0) {
+            throw new Exception("Can't be less than 0");
         }
-        return a*a;
+        return (a * a);
     }
 
-    public static int callSqr(int a) throws Exception  //5. go to caller function (line 14)
+    public static int callSqr(int a) throws Exception
     {
-        return sqr(a);   //3. goto : line no. 23
+        return sqr(a);
     }
 }

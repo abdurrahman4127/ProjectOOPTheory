@@ -7,8 +7,7 @@ public class NestedException5_3 {
         int[] divisors = {2, 3, 0, 4};
 
         try {
-            for (int i = 0; i < 6; i++)  //ArrayIndexOutOfBoundException
-            {
+            for (int i = 0; i < 6; i++) { //ArrayIndexOutOfBoundException
                 try {
                     int div = divisors[i];
                     int x = N / div;   //ArithmeticException

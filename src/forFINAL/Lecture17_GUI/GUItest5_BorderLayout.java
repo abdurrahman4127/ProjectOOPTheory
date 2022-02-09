@@ -3,12 +3,11 @@ package forFINAL.Lecture17_GUI;
 import java.awt.*;
 import javax.swing.*;
 
-public class GUItest5_BorderLayout
-{
+public class GUItest5_BorderLayout {
     JFrame frame;   //frame is the reference of JFrame
 
-    GUItest5_BorderLayout()  //constructor
-    {
+    //constructor
+    GUItest5_BorderLayout() {
         frame = new JFrame();
         frame.setSize(500,400);
 //        frame.setLayout(new BorderLayout()); //no need of this since JFrame uses Border Layout as default

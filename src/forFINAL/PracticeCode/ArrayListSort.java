@@ -5,8 +5,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 
-public class ArrayListSort
-{
+public class ArrayListSort {
     public static void main(String[] args)
     {
         ArrayList<Integer> list = new ArrayList<>();
@@ -18,8 +17,7 @@ public class ArrayListSort
         list.add(8);
         System.out.println("size : " + list.size());
 
-        Collections.sort(list, new Comparator<Integer>()
-        {
+        Collections.sort(list, new Comparator<Integer>() {
             @Override
             public int compare(Integer left, Integer right)
             {
@@ -32,12 +30,11 @@ public class ArrayListSort
         printTheList(list);
     }
 
-    static void printTheList(ArrayList<Integer> list)
-    {
-        for (int i=0; i<list.size(); i++)
-        {
+    static void printTheList(ArrayList<Integer> list) {
+        for (int i=0; i<list.size(); i++) {
             System.out.println(list.get(i));
         }
+
 //        System.out.println(list);
     }
 }

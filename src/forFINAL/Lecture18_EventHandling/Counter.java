@@ -12,8 +12,7 @@ public class Counter
     JButton button;
     JTextField textField;
 
-    Counter()
-    {
+    Counter() {
         frame = new JFrame("Frame");
         frame.setSize(400, 150);
         frame.setLayout(new FlowLayout());

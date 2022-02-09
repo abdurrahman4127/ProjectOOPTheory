@@ -1,9 +1,8 @@
 package forFINAL.Lecture16_Exception;
 
-class CustomException extends Exception // Exception is a built-in class
-{
-     CustomException()  //exception has parameterless constructor too
-     {
+// Exception is a built-in class
+class CustomException extends Exception {
+     CustomException() {   //exception has parameterless constructor too
          super();   //calling Exception's parameterless constructor
      }
 

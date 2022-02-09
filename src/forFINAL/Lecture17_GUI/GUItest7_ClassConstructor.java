@@ -7,11 +7,10 @@ import java.awt.*;
    benefit : after calling the constructor can be called multiple times to create multiple frame
 */
 
-public class GUItest7_ClassConstructor extends JFrame
-{
+public class GUItest7_ClassConstructor extends JFrame {
     JFrame frame;
-    GUItest7_ClassConstructor()
-    {
+
+    GUItest7_ClassConstructor() {
         super("Frame");  //actually, its : JFrame ref = new JFrame("Frame")
         setSize(300,300); //reference is unnecessary as JFrame is being extended by this class
         setBackground(Color.BLUE);
@@ -23,7 +22,8 @@ public class GUItest7_ClassConstructor extends JFrame
         setVisible(true);   // it is the same as : ref.setVisible(true);
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         new GUItest7_ClassConstructor();
         new GUItest7_ClassConstructor();
     }

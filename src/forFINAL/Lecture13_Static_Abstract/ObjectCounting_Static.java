@@ -1,7 +1,6 @@
 package forFINAL.Lecture13_Static_Abstract;
 
-class Counter
-{
+class Counter {
     int nonStaticCount = 0;  //object specific; not class
     static int staticCount = 0;  //class specific; not object
 
@@ -15,8 +14,7 @@ class Counter
     }
 }
 
-public class ObjectCounting_Static
-{
+public class ObjectCounting_Static {
     public static void main(String[] args)
     {
         Counter c1 = new Counter();

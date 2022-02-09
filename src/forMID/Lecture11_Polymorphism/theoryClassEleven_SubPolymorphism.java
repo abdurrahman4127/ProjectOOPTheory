@@ -1,46 +1,44 @@
 package forMID.Lecture11_Polymorphism;
 
 //subclass polymorphism
-class Shape
-{
+class Shape {
     void draw(){
         System.out.println("Drawing a random shape");
     }
 }
-class Triangle extends Shape
-{
+
+class Triangle extends Shape {
     void draw(){
         System.out.println("Drawing a triangle");
     }
 }
-class Rectangle extends Shape
-{
+
+class Rectangle extends Shape {
     void draw(){
         System.out.println("Drawing a triangle");
     }
 }
-class Circle extends Shape
-{
+
+class Circle extends Shape {
     void draw(){
         System.out.println("Drawing a circle");
     }
 }
-class Isosceles extends Triangle
-{
+
+class Isosceles extends Triangle {
     void draw(){
-        System.out.println("Drawing an beforeMID.Isosceles triangle");
+        System.out.println("Drawing an Isosceles triangle");
     }
 }
-class Square extends Rectangle
-{
+
+class Square extends Rectangle {
     void draw(){
-        System.out.println("Drawing an beforeMID.Isosceles triangle");
+        System.out.println("Drawing an Isosceles triangle");
     }
 }
 
 
-public class theoryClassEleven_SubPolymorphism
-{
+public class theoryClassEleven_SubPolymorphism {
     public static void main(String[] args)
     {
         draw(new Triangle());
@@ -48,26 +46,23 @@ public class theoryClassEleven_SubPolymorphism
         draw(new Isosceles());
     }
 
-    //doing : beforeMID.Shape shape = new beforeMID.Triangle(); using methode
-    //assigning objects to (static) beforeMID.Shape Class' reference shape
-    static void  draw(Shape shape) //assigning sub classes' object to super class
+    //doing :  Shape shape = new  Triangle(); using methode
+    //assigning objects to (static)  Shape Class' reference shape
+    static void  draw(Shape shape) //assigning subclasses' object to super class
     {
         shape.draw();
     }
 
     //if it was not allowed, we'd have to write draw methode multiple time...
-//    static void draw(beforeMID.Triangle triangle)
-//    {
+//    static void draw( Triangle triangle){
 //        triangle.draw();
 //    }
 //
-//    static void draw(beforeMID.Rectangle rectangle)
-//    {
+//    static void draw( Rectangle rectangle){
 //        rectangle.draw();
 //    }
 //
-//    static void draw(beforeMID.Isosceles rectangle)
-//    {
+//    static void draw( Isosceles rectangle){
 //        rectangle .draw();
 //    }
 }
