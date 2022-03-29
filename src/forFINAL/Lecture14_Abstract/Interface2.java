@@ -3,30 +3,28 @@ package forFINAL.Lecture14_Abstract;
 //interface-interface -> extends
 //class-interface -> implement
 
-interface Student
-{
+interface Student {
     int f = 0;
 
     void A();
     void R();
 }
 
-interface Teacher extends Student //one interface can extend other Interface
-{
-    void tn();
+//one interface can extend other Interface
+interface Teacher extends Student {
+    void ar();
 }
 
 class NormalClass
 {
-    void insideNormal()
-    {
+    void insideNormal() {
         System.out.println("Inside Normal");
     }
 }
 
 //we can inherit from a concrete class using extend before implementing
-class Implement extends NormalClass implements Student, Teacher //must override; if don't want, make it abstract too.
-{
+//must override; if don't want, make it abstract too.
+class Implement extends NormalClass implements Student, Teacher {
     @Override
     public void A() {
         System.out.println("inside A ");
@@ -38,18 +36,16 @@ class Implement extends NormalClass implements Student, Teacher //must override;
     }
 
     @Override
-    public void tn() {
-        System.out.println("inside tn ");
+    public void ar() {
+        System.out.println("inside ar ");
     }
 }
 
-abstract class Implement2 implements Student, Teacher
-{
+abstract class Implement2 implements Student, Teacher {
     //tryna implement it without overriding
     //using abstract keyword
 }
 
-public class Interface2
-{
+public class Interface2 {
     //
 }
