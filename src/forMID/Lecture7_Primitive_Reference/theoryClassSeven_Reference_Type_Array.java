@@ -1,33 +1,27 @@
 package forMID.Lecture7_Primitive_Reference;
 
-class Students
-{
+class Students{
     String name;
     double cgpa;
     String id;
 
-
-    void attendingClass()
-    {
+    void attendingClass(){
         System.out.println(name + " is attending the class");
     }
 
-    void attendingExam()
-    {
+    void attendingExam(){
         System.out.println(name + " is attending the exam");
     }
 
     //constructor
-    public Students(String name, double cgpa, String id)
-    {
+    public Students(String name, double cgpa, String id){
         this.name = name;
         this.cgpa = cgpa;
         this.id = id;
     }
 }
 
-public class theoryClassSeven_Reference_Type_Array
-{
+public class theoryClassSeven_Reference_Type_Array{
     public static void main(String[] args)
     {
         Students s1 = new Students("Abdur Rahman", 3.77, "011202260"); //string goes inside quote
@@ -39,7 +33,7 @@ public class theoryClassSeven_Reference_Type_Array
         //reference type array...
         Students []arr = new Students[3];
         arr[0] = new Students("Abdur Rahman", 3.77, "011202260");
-        arr[1] = new Students("Thao Nhi", 3.77,  "2912005");
+        arr[1] = new Students("L Lawliet", 3.77,  "01072001");
 
         arr[0].attendingExam();
         //here, it's pointing at s1 reference, therefore it will access its properties
