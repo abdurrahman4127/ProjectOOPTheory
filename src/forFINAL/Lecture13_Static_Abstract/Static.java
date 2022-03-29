@@ -17,8 +17,8 @@ class Student {
 public class Static {
     public static void main(String[] args)
     {
-        Student student1 = new Student("AR",1);
-        Student student2 = new Student("TN",29);
+        Student student1 = new Student("AR",7);
+        Student student2 = new Student("CR",7);
 
         System.out.println(Student.varsityName); // "student1.varsity" will word as well
         System.out.println(Student.varsityName);  //UIU
