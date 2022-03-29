@@ -7,19 +7,19 @@ package forFINAL.Lecture14_Abstract;
 
 class Final
 {
-    final String name = "Thao Nhi"; // to use 'final' : either initialize it
-    final String herName; //or access it only using constructor
+    final String name = "Abdur Rahman"; // to use 'final' : either initialize it
+    final String nickName; //or access it only using constructor
 
-    Final(String herName)
+    Final(String nickName)
     {
-        this.herName = herName;
+        this.nickName = nickName;
     }
 
     void showName()
     {
         //name = "Another One"; //not allowed
         System.out.println(name);
-        System.out.println(herName);
+        System.out.println(nickName);
     }
 
     final void finalMethod() //can't override finalized methods
@@ -28,9 +28,10 @@ class Final
     }
 }
 
-class Final2 extends Final
-{
-    Final2(String herName) { super(herName); }
+class Final2 extends Final {
+    Final2(String nickName) { 
+       super(nickName);
+    }
     //can't override finalized methods
     //final void finalMethod() { System.out.println("overriding"); }
 }
@@ -49,7 +50,7 @@ public class FinalKeyword
 {
     public static void main(String[] args)
     {
-        Final f = new Final("Thao Nhi");
+        Final f = new Final("Abdur Rahman");
         f.showName();
     }
 }
