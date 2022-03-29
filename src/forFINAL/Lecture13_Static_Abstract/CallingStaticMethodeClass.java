@@ -20,7 +20,7 @@ class Students {
 public class CallingStaticMethodeClass {
     public static void main(String[] args)
     {
-        Students tn = new Students("Thao Nhi",7);
+        Students tn = new Students("abdur Rahman",7);
 
         // can't access non-static property inside a static methode/class
         Students.staticMethode(); //we're calling using class, so 'this' key doesn't exit.
