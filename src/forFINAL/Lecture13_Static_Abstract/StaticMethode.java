@@ -1,7 +1,7 @@
 package forFINAL.Lecture13_Static_Abstract;
 
-class TN {
-    static String name = "Thao Nhi";
+class AR {
+    static String name = "Abdur Rahman";
 
     static void name() {
         System.out.println(name);
@@ -15,11 +15,11 @@ public class StaticMethode {
     // if it wasn't static, we'd have to create an object of 'StaticMethode' (i.e. the public class)
     // but then we'd be needing to create a constructor and pass parameters; but java compiler doesn't know it
 
-    public static void main(String[] args)
+    public static void main(String[] args) 
     {
-        TN tn = new TN();
+        AR obj = new AR();
 
-        System.out.println(TN.name);
-//        tn.name();
+        System.out.println(obj.name);
+//        obj.name();
     }
 }
