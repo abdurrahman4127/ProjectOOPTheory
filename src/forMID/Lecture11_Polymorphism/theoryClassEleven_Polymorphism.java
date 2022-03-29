@@ -31,17 +31,17 @@ class BOX {
 //    String color;
 //
 //    void eat(){
-//        System.out.println("beforeMID.Animal is eating");
+//        System.out.println("Animal is eating");
 //    }
 //    void sleep(){
-//        System.out.println("beforeMID.Animal is eating");
+//        System.out.println("Animal is eating");
 //    }
 //}
 //
-//class beforeMID.Birds extends Animals
+//class Birds extends Animals
 //{
 //    void fly(){
-//        System.out.println("beforeMID.Bird is flying");
+//        System.out.println("Bird is flying");
 //    }
 //}
 //
@@ -89,16 +89,16 @@ class Magpie extends Birds {
 
     void fly()
     {
-        System.out.println("beforeMID.Magpie is flying..");
+        System.out.println("Magpie is flying..");
     }
 
     void fly(int speed)
     {
-        System.out.println("beforeMID.Magpie is flying at speed " + speed);
+        System.out.println("Magpie is flying at speed " + speed);
     }
     void eat()
     {
-        System.out.println("beforeMID.Magpie is eating");
+        System.out.println("Magpie is eating");
     }
 }
 
@@ -106,15 +106,15 @@ class Magpie extends Birds {
 public class theoryClassEleven_Polymorphism {
     public static void main(String[] args)
     {
-//        beforeMID.BOX b = new beforeMID.BOX(10,5,8);
+//        BOX b = new BOX(10,5,8);
 //        System.out.println("vol of b : " + b.getVolume());
 //
-//        beforeMID.BOX b1 = new beforeMID.BOX(5); //calling the 2nd constructor
+//        BOX b1 = new BOX(5); //calling the 2nd constructor
 //        System.out.println("vol of b1 : " + b1.getVolume());
 
         /*
         //compile time - run time; objects get created when code runs
-        Animals a = new beforeMID.Birds();
+        Animals a = new Birds();
         a.sleep();
         Horses h = new Horses();
         h.sleep();
@@ -122,7 +122,7 @@ public class theoryClassEleven_Polymorphism {
         // a.fly(); won't work since in compile-time, there's no methode in that name inside the reference of beforeMID.Animal class.
         // to make it word, we gotta cast the reference-object
 
-        ((beforeMID.Birds)a).fly(); //casting beforeMID.Animal class reference into beforeMID.Bird class
+        ((Birds)a).fly(); //casting beforeMID.Animal class reference into beforeMID.Bird class
 
          */
 
